@@ -1,0 +1,481 @@
+basePath: /
+host: localhost:4444
+info:
+  contact: {}
+  description: Api rest en GO de un cine
+  title: Cine
+  version: "1.0"
+paths:
+  /:
+    get:
+      consumes:
+      - application/json
+      description: Prueba rápida para saber si el servidor está en ejecución
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Saber si el servidor esta en ejecución
+      tags:
+      - HealthCheck
+  /api/v1/TarjetasDebito:
+    get:
+      consumes:
+      - application/json
+      description: Obtener tarjetas de débito o crédito para simular una compra
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Obtener las tarjetas de débito
+      tags:
+      - Tarjetas
+  /api/v1/butaca:
+    get:
+      consumes:
+      - application/json
+      description: Hace la petición para obtener las butacas mediante la salaID
+      parameters:
+      - description: clave foranea a buscar
+        in: query
+        name: sala_id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Obtiene un item por salaID
+      tags:
+      - Butacas
+  /api/v1/butacas:
+    get:
+      consumes:
+      - application/json
+      description: Obtención de todas las butacas en la base de datos
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Obtiene todas las
+      tags:
+      - Butacas
+  /api/v1/horario:
+    get:
+      consumes:
+      - application/json
+      description: Hace la petición para obtener un horario mediante la salaID
+      parameters:
+      - description: sala a buscar
+        in: query
+        name: pelicula_id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Obtiene un item por PeliculaID
+      tags:
+      - Horarios
+  /api/v1/horario/{id}:
+    get:
+      consumes:
+      - application/json
+      description: Hace la petición para obtener un horario por su id
+      operationId: Buscar un horario por su id
+      parameters:
+      - description: id del horario a buscar
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Obtiene un horario en especifico
+      tags:
+      - Horarios
+  /api/v1/horarios:
+    get:
+      consumes:
+      - application/json
+      description: Obtener todos los horarios disponibles
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Obtiene todos los horarios disponibles
+      tags:
+      - Horarios
+  /api/v1/precio:
+    get:
+      consumes:
+      - application/json
+      description: Hace la petición para obtener los precios mediante la salaID
+      parameters:
+      - description: llave forenea de sala en precios
+        in: query
+        name: sala_id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Obtiene precios con la llave foranea SalaID
+      tags:
+      - Precios
+  /api/v1/precio/{id}:
+    get:
+      consumes:
+      - application/json
+      description: Hace la petición para obtener una solo precio por su ID
+      operationId: Buscar precio por su ID
+      parameters:
+      - description: ID del precio a buscar
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Obtiene un precio en especifico
+      tags:
+      - Precios
+  /api/v1/precios:
+    get:
+      consumes:
+      - application/json
+      description: Obtener todos los precios
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Obtener todos los precios
+      tags:
+      - Precios
+  /api/v1/promocion/{id}:
+    get:
+      consumes:
+      - application/json
+      description: Hace la petición para obtener una promocion por su id
+      operationId: Buscar una promocion por su id
+      parameters:
+      - description: ID de la promocion a buscar
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Obtiene una promocion en especifico
+      tags:
+      - Promociones
+  /api/v1/promociones:
+    get:
+      consumes:
+      - application/json
+      description: Obtener todas las promociones disponibles
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Obtener todos los promociones
+      tags:
+      - Promociones
+  /api/v1/sala/{ID}:
+    get:
+      consumes:
+      - application/json
+      description: Hace la petición para obtener una sola por su ID
+      operationId: Buscar sala por su ID
+      parameters:
+      - description: ID de la sala a buscar
+        in: path
+        name: ID
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Obtiene una sala en especifico
+      tags:
+      - Salas
+  /api/v1/salas:
+    get:
+      consumes:
+      - application/json
+      description: Obtencion de todas las salas en la base de datos
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Obtiene salas
+      tags:
+      - Salas
+  /api/v1/tarjeta:
+    get:
+      consumes:
+      - application/json
+      description: Hace la petición para obtener un sola tarjeta por numero
+      parameters:
+      - description: Numero de la tarjeta a buscar
+        in: query
+        name: cardNumber
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Obtiene un item por su numero de tarjeta
+      tags:
+      - Tarjetas
+  /api/v1/ticket:
+    post:
+      consumes:
+      - application/json
+      description: Insertar un nuevo ticket en la base de datos
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Creación exitosa
+          schema:
+            type: string
+        "400":
+          description: Error en el retorno
+          schema:
+            type: string
+      summary: Insertar un ticket en la base de datos
+      tags:
+      - Tickets
+  /api/v1/tickets:
+    get:
+      consumes:
+      - application/json
+      description: Obtiene todos los tickets ya sea de un usuario registrado o no
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Exitoso
+          schema:
+            type: string
+        "400":
+          description: Error en la obtención de tickets
+          schema:
+            type: string
+      summary: Obtiene todas las tickets
+      tags:
+      - Tickets
+  /api/v1/usuario:
+    get:
+      consumes:
+      - application/json
+      description: Hace la petición para obtener un solo usuario por su username
+      parameters:
+      - description: username del usuario a buscar
+        in: query
+        name: user_p
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Obtiene un item por su usuario
+      tags:
+      - Usuarios
+    post:
+      consumes:
+      - application/json
+      description: Insertar un nuevo usuario en la base de datos
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Retorno exitoso
+          schema:
+            type: string
+        "400":
+          description: Error en la obtencion de los datos
+          schema:
+            type: string
+      summary: Insertar un usuario en la base de datos
+      tags:
+      - Usuarios
+  /api/v1/usuario/{id}:
+    get:
+      consumes:
+      - application/json
+      description: Hace la petición para obtener un solo usuario por su ID
+      operationId: Busca un usuario por su ID
+      parameters:
+      - description: ID de la usuario a buscar
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Obtiene un usuario por su correo
+      tags:
+      - Usuarios
+  /api/v1/usuarios:
+    get:
+      consumes:
+      - application/json
+      description: Obtención de usuarios que ya están registrados en la base de datos
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Retorno exitoso
+          schema:
+            type: string
+        "400":
+          description: Error en la obtencion de los datos
+          schema:
+            type: string
+      summary: Obtención de usuarios
+      tags:
+      - Usuarios
+  /createpelicula:
+    post:
+      consumes:
+      - application/json
+      description: Insertar un nueva película en la base de datos
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Éxito
+          schema:
+            type: string
+        "400":
+          description: Error
+          schema:
+            type: string
+      summary: Insertar una película en la base de datos
+      tags:
+      - Peliculas
+  /pelicula:
+    get:
+      consumes:
+      - application/json
+      description: Hace la petición para obtener la lista de películas que estén en
+        cartelera
+      parameters:
+      - description: columna a comprobar
+        in: query
+        name: estreno
+        type: boolean
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Obtiene una lista de películas en cartelera
+      tags:
+      - Peliculas
+  /peliculas:
+    get:
+      consumes:
+      - application/json
+      description: Obtencion de todas las peliculas en la base de datos
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Obtiene peliculas
+      tags:
+      - Peliculas
+  /peliculas/{id}:
+    get:
+      consumes:
+      - application/json
+      description: Hace la petición para obtener una sola pelicula por su ID
+      operationId: Buscar elemento por su ID
+      parameters:
+      - description: ID de la película a buscar
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Obtiene peliculas
+      tags:
+      - Peliculas
+swagger: "2.0"

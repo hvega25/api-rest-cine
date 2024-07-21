@@ -1,0 +1,4 @@
+1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, NULL, Oferta de primavera, ¡Descuentos especiales para dar la bienvenida a la primavera!, https://okdiario.com/img/2024/02/26/-sabes-la-diferencia-entre-un-kebab-y-un-durum.jpg
+2, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, NULL, 2x1 en cine, ¡Disfruta de dos entradas al precio de una en tu cine favorito!, https://okdiario.com/img/2024/02/26/-sabes-la-diferencia-entre-un-kebab-y-un-durum.jpg
+3, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, NULL, Descuento en productos de belleza, ¡Aprovecha nuestro descuento en una amplia selección de productos de belleza!, https://okdiario.com/img/2024/02/26/-sabes-la-diferencia-entre-un-kebab-y-un-durum.jpg
+4, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, NULL, Envío gratuito, ¡Compra ahora y recibe tu pedido en casa sin coste adicional!, https://okdiario.com/img/2024/02/26/-sabes-la-diferencia-entre-un-kebab-y-un-durum.jpg

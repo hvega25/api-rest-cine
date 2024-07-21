@@ -1,0 +1,19 @@
+ CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, Juan, Pérez, juanperez, juan@example.com, contraseña1, 1990-05-15, M
+ CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, María, González, mariagonzalez, maria@example.com, contraseña2, 1992-09-20, F
+ CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, Luis, Martínez, luismartinez, luis@example.com, contraseña3, 1985-03-10, M
+ CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, Ana, Sánchez, anasanchez, ana@example.com, contraseña4, 1988-07-25, F
+ CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, Pedro, López, pedrolopez, pedro@example.com, contraseña5, 1995-12-08, M
+ CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, Laura, Rodríguez, laurarodriguez, laura@example.com, contraseña6, 1993-11-18, F
+ CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, Carlos, Fernández, carlosfernandez, carlos@example.com, contraseña7, 1983-02-28, M
+ CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, Sofía, Díaz, sofiadiaz, sofia@example.com, contraseña8, 1991-06-30, F
+ CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, Javier, Hernández, javierhernandez, javier@example.com, contraseña9, 1987-04-12, M
+ CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, Elena, Gómez, elenagomez, elena@example.com, contraseña10, 1994-08-05, F
+ CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, Miguel, Pérez, miguelperez, miguel@example.com, contraseña11, 1986-10-17, M
+ CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, Paula, Martínez, paulamartinez, paula@example.com, contraseña12, 1997-01-22, F
+ CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, Francisco, Sánchez, franciscosanchez, francisco@example.com, contraseña13, 1989-09-03, M
+ CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, Carmen, López, carmenlopez, carmen@example.com, contraseña14, 1996-07-14, F
+ CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, Manuel, Rodríguez, manuelrodriguez, manuel@example.com, contraseña15, 1984-11-28, M
+ CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, Isabel, Fernández, isabelfernandez, isabel@example.com, contraseña16, 1992-04-09, F
+ CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, Lucía, Hernández, luciahernandez, lucia@example.com, contraseña18, 1995-12-01, F
+CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, Diego, Gómez, diegogomez, diego@example.com, contraseña19, 1983-06-14, M
+CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, Marina, Pérez, marinaperez, marina@example.com, contraseña20, 1990-02-28, F
